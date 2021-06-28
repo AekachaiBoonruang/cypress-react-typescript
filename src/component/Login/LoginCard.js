@@ -3,7 +3,7 @@ import styled, { css } from "styled-components";
 export const CardWrapper = styled.div`
   overflow: hidden;
   padding: 0 0 32px;
-  margin: 48px auto 0;
+  margin: 48px 10px 0 0;
   width: 300px;
   font-family: Quicksand, arial, sans-serif;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.05), 0 0px 40px rgba(0, 0, 0, 0.08);
@@ -65,20 +65,20 @@ export const CardInput = styled.input`
 export const CardIcon = styled.span`
   color: #666;
   cursor: pointer;
-  opacity: .25;
-  transition: opacity .25s ease-in;
+  opacity: 0.25;
+  transition: opacity 0.25s ease-in;
 
   &:hover {
-    opacity: .95;
+    opacity: 0.95;
   }
 
-  ${props =>
+  ${(props) =>
     props.big &&
     css`
       font-size: 26px;
     `}
 
-  ${props =>
+  ${(props) =>
     props.eye &&
     css`
       position: absolute;
@@ -86,7 +86,7 @@ export const CardIcon = styled.span`
       right: 0;
     `}
 
-  ${props =>
+  ${(props) =>
     props.small &&
     css`
       font-size: 14px;

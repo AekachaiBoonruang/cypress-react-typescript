@@ -16,6 +16,9 @@ You will also see any lint errors in the console.
 
 ### `yarn test`
 
+`yarn cypress open-ct` Open cypress GUI.\
+`yarn cypress run-ct` Run cypress
+
 Launches the test runner in the interactive watch mode.\
 See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 

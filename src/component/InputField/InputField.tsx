@@ -2,11 +2,12 @@ import styled from "styled-components";
 
 interface FieldProps {
   placeHolder: string;
+  type: string;
 }
 export const CardInput = styled.input`
   padding: 7px 0;
   width: 100%;
-  font-family: inherit;
+  font-family: Quicksand, arial, sans-serif;
   font-size: 14px;
   border-top: 0;
   border-right: 0;
@@ -22,6 +23,6 @@ export const CardInput = styled.input`
 
 export const InputField: React.FC<FieldProps> = (props) => {
   return (
-    <CardInput placeholder={props.placeHolder} type="text" required />
+    <CardInput placeholder={props.placeHolder} type={props.type} required />
   );
 }

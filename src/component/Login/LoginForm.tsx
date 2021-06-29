@@ -3,11 +3,12 @@ import {
   CardHeader,
   CardHeading,
   CardBody,
-  CardIcon,
   CardFieldset,
-  CardInput,
   CardButton,
 } from "./LoginCard";
+
+import {InputField} from '../InputField/InputField'
+import { SubmitButton } from "../Button/SubmitButton";
 
 export const LoginCard = () => {
   return (
@@ -19,20 +20,14 @@ export const LoginCard = () => {
 
         <CardBody>
           <CardFieldset>
-            <CardInput placeholder="Username" type="text" required />
+            <InputField placeHolder={'E-mail'} type={'text'}/>
+          </CardFieldset>
+          <CardFieldset>
+            <InputField placeHolder={'Password'} type={'password'}/>
           </CardFieldset>
 
           <CardFieldset>
-            <CardInput placeholder="E-mail" type="text" required />
-          </CardFieldset>
-
-          <CardFieldset>
-            <CardInput placeholder="Password" type="password" required />
-            <CardIcon className="fa fa-eye" />
-          </CardFieldset>
-
-          <CardFieldset>
-            <CardButton type="button">Log In</CardButton>
+            <SubmitButton text="Log In" />
           </CardFieldset>
         </CardBody>
       </CardWrapper>

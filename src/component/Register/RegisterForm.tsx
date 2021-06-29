@@ -3,34 +3,32 @@ import {
   CardHeader,
   CardHeading,
   CardBody,
-  CardIcon,
   CardFieldset,
-  CardInput,
   CardOptionsNote,
   CardButton,
   CardLink
 } from "./RegisterCard.js";
+
+import { InputField } from "../InputField/InputField";
+import { SubmitButton } from "../Button/SubmitButton";
 
 export const RegisterCard = () => {
   return (
     <div className="App">
       <CardWrapper>
         <CardHeader>
-          <CardHeading>Sign Up</CardHeading>
+          <CardHeading>Register</CardHeading>
         </CardHeader>
 
         <CardBody>
           <CardFieldset>
-            <CardInput placeholder="Username" type="text" required />
+            <InputField placeHolder={'Username'} type={'text'}/>
           </CardFieldset>
-
           <CardFieldset>
-            <CardInput placeholder="E-mail" type="text" required />
+            <InputField placeHolder={'E-mail'} type={'text'}/>
           </CardFieldset>
-
           <CardFieldset>
-            <CardInput placeholder="Password" type="password" required />
-            <CardIcon className="fa fa-eye" />
+            <InputField placeHolder={'Password'} type={'password'}/>
           </CardFieldset>
 
           <CardFieldset>
@@ -38,7 +36,7 @@ export const RegisterCard = () => {
           </CardFieldset>
 
           <CardFieldset>
-            <CardButton type="button">Sign Up</CardButton>
+            <SubmitButton text={"Register"} />
           </CardFieldset>
 
           <CardFieldset>

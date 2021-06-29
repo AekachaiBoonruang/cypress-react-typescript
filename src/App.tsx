@@ -1,12 +1,12 @@
 import './App.css';
-import {RegisterCard} from './component/Register/RegisterForm'
-import {LoginCard} from './component/Login/LoginForm'
+import {SideBar} from './component/Sidebar/Sidebar'
 
 function App() {
   return (
-    <div className="App" >
-        <LoginCard />
-        <RegisterCard />
+    <div>
+      <div className="Side-bar">
+        <SideBar />
+      </div>
     </div>
   );
 }

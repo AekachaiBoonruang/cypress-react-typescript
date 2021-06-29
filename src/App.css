@@ -1,3 +1,7 @@
+.Side-bar {
+  position: absolute;
+}
+
 .App {
   display: flex;
   justify-content: center;

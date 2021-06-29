@@ -5,7 +5,6 @@ import {
   CardBody,
   CardFieldset,
   CardOptionsNote,
-  CardButton,
   CardLink
 } from "./RegisterCard.js";
 

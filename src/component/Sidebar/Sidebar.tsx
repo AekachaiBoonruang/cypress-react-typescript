@@ -28,7 +28,6 @@ const useStyles = makeStyles((theme) => ({
     width: '100%',
     maxWidth: 400,
     minWidth: 200,
-    height: '100%',
     backgroundColor: theme.palette.background.paper,
   },
   nested: {

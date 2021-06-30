@@ -1,12 +1,9 @@
 import './App.css';
-import {SideBar} from './component/Sidebar/Sidebar'
-
+import HomePage from './page/HomePage'
 function App() {
   return (
     <div>
-      <div className="Side-bar">
-        <SideBar />
-      </div>
+      <HomePage />
     </div>
   );
 }
